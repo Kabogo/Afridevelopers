@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriDevelopers | Digital Transformation Experts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="animated-bg">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="square square-1"></div>
+        <div class="square square-2"></div>
+    </div>
+    
+    <!-- Floating Particles -->
+    <canvas id="particles"></canvas>
+    
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <span class="logo-icon"><i class="fas fa-code"></i></span>
+                    <span class="logo-text">AfriDevelopers</span>
+                    <span class="logo-badge">PRO</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Digital Solutions</span>
+                    <span class="title-line">For <span class="text-gradient">African</span> Businesses</span>
+                </h1>
+                <p class="hero-subtitle">We transform ideas into powerful digital experiences that drive growth and innovation across Africa.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-hover-effect">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn btn-secondary btn-hover-effect">
+                        <span>Our Services</span>
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+                
+                <div class="tech-stack">
+                    <div class="stack-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    </div>
+                    <div class="stack-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+                    </div>
+                    <div class="stack-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    </div>
+                    <div class="stack-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+                    </div>
+                    <div class="stack-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Digital Solutions" class="main-image">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-mobile-alt"></i>
+                        <p>Mobile App Development</p>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-globe"></i>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Digital Marketing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="text-gradient">Services</span></h2>
+                <p class="section-subtitle">Comprehensive digital solutions tailored to propel your business forward</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="web">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with React, Angular, or Vue.js for optimal performance and scalability.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Responsive Design</span>
+                        <span><i class="fas fa-check"></i> SEO Optimized</span>
+                        <span><i class="fas fa-check"></i> CMS Integration</span>
+                    </div>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card" data-service="mobile">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Cross-platform mobile applications using Flutter and React Native that work seamlessly on iOS and Android.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Native Performance</span>
+                        <span><i class="fas fa-check"></i> Offline Capabilities</span>
+                        <span><i class="fas fa-check"></i> App Store Optimization</span>
+                    </div>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card" data-service="ecommerce">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Complete online store solutions with secure payment gateways, inventory management, and analytics.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> Payment Integration</span>
+                        <span><i class="fas fa-check"></i> Product Management</span>
+                        <span><i class="fas fa-check"></i> Marketing Tools</span>
+                    </div>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card" data-service="hosting">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Cloud Hosting</h3>
+                    <p>Reliable, secure, and scalable cloud hosting with 99.9% uptime and automatic backups.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> SSD Storage</span>
+                        <span><i class="fas fa-check"></i> Free SSL</span>
+                        <span><i class="fas fa-check"></i> 24/7 Support</span>
+                    </div>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card" data-service="marketing">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Data-driven marketing strategies to increase your online visibility and customer base.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> SEO Services</span>
+                        <span><i class="fas fa-check"></i> Social Media Marketing</span>
+                        <span><i class="fas fa-check"></i> PPC Campaigns</span>
+                    </div>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-hover-effect"></div>
+                </div>
+                
+                <div class="service-card" data-service="design">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces that enhance user experience and drive conversions.</p>
+                    <div class="service-features">
+                        <span><i class="fas fa-check"></i> User Research</span>
+                        <span><i class="fas fa-check"></i> Prototyping</span>
+                        <span><i class="fas fa-check"></i> Usability Testing</span>
+                    </div>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="45">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="30">0</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="text-gradient">Portfolio</span></h2>
+                <p class="section-subtitle">Explore our recent projects that showcase our expertise and creativity</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="E-commerce Website">
+                    <div class="portfolio-overlay">
+                        <h3>ShopAfrika</h3>
+                        <p>E-commerce platform for African artisans with integrated payment solutions</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mobile">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mobile App">
+                    <div class="portfolio-overlay">
+                        <h3>HealthTrack</h3>
+                        <p>Fitness and wellness mobile application with AI-powered recommendations</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Corporate Website">
+                    <div class="portfolio-overlay">
+                        <h3>AfriBank</h3>
+                        <p>Corporate website for regional bank with customer portal and loan calculator</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="ecommerce">
+                    <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="E-commerce Platform">
+                    <div class="portfolio-overlay">
+                        <h3>AfriMarket</h3>
+                        <p>B2B marketplace connecting African manufacturers with global buyers</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mobile">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mobile App">
+                    <div class="portfolio-overlay">
+                        <h3>EduConnect</h3>
+                        <p>Educational platform connecting students with tutors across Africa</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="marketing">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Digital Marketing">
+                    <div class="portfolio-overlay">
+                        <h3>TourAfrika</h3>
+                        <p>Digital marketing campaign for tourism platform across 5 African countries</p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Google Ads</span>
+                            <span class="tech-tag">Facebook Ads</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                        <a href="#" class="portfolio-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <p>Ready to start your project?</p>
+                <a href="#contact" class="btn btn-primary btn-hover-effect">
+                    <span>Get in Touch</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About <span class="text-gradient">AfriDevelopers</span></h2>
+                <p class="about-text">Founded in 2018, AfriDevelopers is a leading software development company based in Nairobi, Kenya with a mission to empower African businesses through innovative digital solutions.</p>
+                <p class="about-text">Our team of 30+ skilled developers, designers, and digital marketers work together to deliver high-quality products that help our clients succeed in the digital economy.</p>
+                
+                <div class="about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-medal"></i>
+                        <h4>Quality Assurance</h4>
+                        <p>Rigorous testing processes to ensure bug-free, high-performance applications</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Innovative Solutions</h4>
+                        <p>Cutting-edge technologies tailored to solve your unique business challenges</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-headset"></i>
+                        <h4>24/7 Support</h4>
+                        <p>Dedicated support team available round the clock for all your needs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Our Team" class="main-image">
+                    <div class="experience-badge">
+                        <span class="years">5+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our <span class="text-gradient">Clients</span> Say</h2>
+                <p class="section-subtitle">Hear from businesses we've helped transform through digital solutions</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">AfriDevelopers transformed our e-commerce platform, resulting in a 300% increase in sales within the first quarter. Their technical expertise and understanding of the African market is unmatched.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, ShopAfrika</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">The mobile app developed by AfriDevelopers has been instrumental in expanding our customer base across East Africa. Their team delivered beyond our expectations on time and within budget.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Omondi">
+                            <div class="author-info">
+                                <h4>David Omondi</h4>
+                                <p>Director, HealthTrack</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Working with AfriDevelopers on our digital transformation journey has been exceptional. Their innovative approach to solving our complex banking requirements has set us apart from competitors.</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina Mohammed">
+                            <div class="author-info">
+                                <h4>Amina Mohammed</h4>
+                                <p>CTO, AfriBank</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+                <p class="section-subtitle">Ready to start your project? Contact us today for a free consultation</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-title">Let's Talk About Your Project</h3>
+                    <p class="contact-text">Fill out the form and our team will get back to you within 24 hours. Or contact us directly using the information below.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-content">
+                            <h4>Our Location</h4>
+                            <p>Mukono, Uganda, Mukono mall RC03</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info-content">
+                            <h4>Call Us</h4>
+                            <p>+256 741 385 304</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h4>Email Us</h4>
+                            <p>info@afridevelopers.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-hover-effect">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let's build something amazing together. Get in touch with our team today.</p>
+                <a href="#contact" class="btn btn-primary btn-hover-effect btn-large">
+                    <span>Start Your Project</span>
+                    <i class="fas fa-rocket"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="text-gradient">Dream Team</span></h2>
+                <p class="section-subtitle">Meet the brilliant minds behind AfriDevelopers</p>
+            </div>
+    
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>John Doe</h3>
+                        <p class="position">Lead Developer</p>
+                        <p class="bio">Full-stack developer with 8+ years experience in building scalable web applications</p>
+                    </div>
+                </div>
+    
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Jane Smith</h3>
+                        <p class="position">UI/UX Designer</p>
+                        <p class="bio">Creative designer specializing in user-centered design and interactive experiences</p>
+                    </div>
+                </div>
+    
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="David Omondi">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-stack-overflow"></i></a>
+                            <a href="#"><i class="fab fa-medium"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>David Omondi</h3>
+                        <p class="position">Mobile Expert</p>
+                        <p class="bio">Flutter guru building cross-platform apps with native performance</p>
+                    </div>
+                </div>
+    
+                <!-- Team Member 4 -->
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina Mohammed">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-dev"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Amina Mohammed</h3>
+                        <p class="position">DevOps Engineer</p>
+                        <p class="bio">Cloud infrastructure specialist ensuring seamless deployments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon"><i class="fas fa-code"></i></span>
+                        <span class="logo-text">AfriDevelopers</span>
+                    </div>
+                    <p class="footer-about">Innovative digital solutions for African businesses. We help you establish and grow your online presence.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">E-Commerce</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Web Hosting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 AfriDevelopers. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookies Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
